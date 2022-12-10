@@ -1,6 +1,6 @@
 import { createStackNavigator } from '@react-navigation/stack'
 
-import { Racing } from '@screens/Racing'
+import { Results } from '@screens/Results'
 
 const { Navigator, Screen } = createStackNavigator()
 
@@ -8,10 +8,10 @@ export function RacingRoutes() {
   return (
     <Navigator screenOptions={{}}>
       <Screen
-        name="racing"
-        component={Racing}
+        name="results"
+        component={Results}
         options={{
-          title: 'Racing',
+          title: 'Results',
         }}
       />
     </Navigator>

@@ -95,3 +95,16 @@ export const circuitsImages: any = {
   yas_marina: require('../assets/circuits/yas_marina.png'),
   zandvoort: require('../assets/circuits/zandvoort.png'),
 }
+
+export const teamsImages: any = {
+  alfa: require('../assets/teams/alfa-romeo.png'),
+  alphatauri: require('../assets/teams/alphatauri.png'),
+  alpine: require('../assets/teams/alpine.png'),
+  aston_martin: require('../assets/teams/aston-martin.png'),
+  ferrari: require('../assets/teams/ferrari.png'),
+  haas: require('../assets/teams/haas.png'),
+  mclaren: require('../assets/teams/mclaren.png'),
+  mercedes: require('../assets/teams/mercedes.png'),
+  red_bull: require('../assets/teams/red-bull.png'),
+  williams: require('../assets/teams/williams.png'),
+}

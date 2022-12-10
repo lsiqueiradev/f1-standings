@@ -1,10 +1,10 @@
 import styled from 'styled-components/native'
 
-import Background from '@components/Background'
-
-export const Container = styled(Background)`
+export const Container = styled.View`
   justify-content: center;
   align-items: center;
+  flex: 1;
+  background-color: ${({ theme }) => theme.COLORS.GRAY_900};
 `
 
 export const Loader = styled.ActivityIndicator.attrs(({ theme }) => ({

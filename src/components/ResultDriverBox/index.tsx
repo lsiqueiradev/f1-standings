@@ -74,7 +74,6 @@ export function ResultDriverBox({ data }: Props) {
             {data.Circuit.Location.country}
           </S.RoundContainerCountry>
         </S.RoundContainer>
-        <S.Constructor>{data.Results[0].Constructor.name}</S.Constructor>
       </S.Content>
       <S.PositionTimeContainer>
         <S.PositionTimeContainerSpan>

@@ -41,7 +41,6 @@ export const getRaceTypeNames: any = {
   qualifying: 'Qualification',
   sprint: 'Sprint',
 }
-
 interface formattedDriversNameArrayProps {
   givenName: string
   familyName: string
@@ -59,4 +58,44 @@ export function formattedDriversNameArray(
     }
   })
   return names
+}
+
+export const getIsoCountry: any = {
+  Dutch: 'NL',
+  Monegasque: 'MC',
+  Mexican: 'MX',
+  British: 'GB',
+  Spanish: 'ES',
+  German: 'DE',
+  French: 'FR',
+  Finnish: 'FI',
+  Australian: 'AU',
+  Canadian: 'CA',
+  Japanese: 'JP',
+  Chinese: 'CN',
+  Thai: 'TH',
+  Danish: 'DK',
+}
+
+export const getIsoCountryCircuits: any = {
+  Bahrain: 'BH',
+  'Saudi Arabia': 'SA',
+  Australia: 'AU',
+  Italy: 'IT',
+  USA: 'US',
+  Spain: 'ES',
+  Monaco: 'MC',
+  Azerbaijan: 'AZ',
+  Canada: 'CA',
+  UK: 'GB',
+  Austria: 'AT',
+  France: 'FR',
+  Hungary: 'HU',
+  Belgium: 'BE',
+  Netherlands: 'NL',
+  Singapore: 'SG',
+  Japan: 'JP',
+  Mexico: 'MX',
+  Brazil: 'BR',
+  UAE: 'AE',
 }

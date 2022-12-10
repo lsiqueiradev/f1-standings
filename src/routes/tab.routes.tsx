@@ -1,17 +1,14 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 
-import { House, FlagCheckered, List, Calendar } from 'phosphor-react-native'
-
+import { Platform } from 'react-native'
+import { MaterialCommunityIcons as Icon } from '@expo/vector-icons'
+import { RFValue } from 'react-native-responsive-fontsize'
 import { useTheme } from 'styled-components'
 
-import { Platform } from 'react-native'
-
-import { Home } from '@screens/Home'
-import { Racing } from '@screens/Racing'
-import { Schedule } from '@screens/Schedule'
-import { Standing } from '@screens/Standing'
-import { RFValue } from 'react-native-responsive-fontsize'
-import { UserPhotoButton } from '@components/UserPhotoButton'
+import { Results } from '@screens/Results'
+import { Drivers } from '@screens/Drivers'
+import { Teams } from '@screens/Teams'
+import { Races } from '@screens/Races'
 
 const { Navigator, Screen } = createBottomTabNavigator()
 
@@ -48,47 +45,47 @@ export function TabRoutes() {
           color: COLORS.WHITE,
           fontFamily: FONT_FAMILY.BOLD,
           fontSize: RFValue(16),
+          textTransform: 'uppercase',
         },
-        headerRight: () => <UserPhotoButton />,
       }}
     >
       <Screen
-        name="home"
-        component={Home}
+        name="race"
+        component={Races}
         options={{
-          title: 'Home',
+          title: 'Races',
           tabBarIcon: ({ color }) => (
-            <House color={color} size={24} weight="fill" />
+            <Icon name="calendar-multiselect" color={color} size={24} />
           ),
         }}
       />
       <Screen
-        name="schedule"
-        component={Schedule}
+        name="results"
+        component={Results}
         options={{
-          title: 'Schedule',
+          title: 'Results',
           tabBarIcon: ({ color }) => (
-            <Calendar color={color} size={24} weight="fill" />
+            <Icon name="format-list-numbered" color={color} size={24} />
           ),
         }}
       />
       <Screen
-        name="standing"
-        component={Standing}
+        name="teams"
+        component={Teams}
         options={{
-          title: 'Standings',
+          title: 'Teams',
           tabBarIcon: ({ color }) => (
-            <List size={30} color={color} weight="fill" />
+            <Icon name="format-list-group" color={color} size={24} />
           ),
         }}
       />
       <Screen
-        name="racing"
-        component={Racing}
+        name="driver"
+        component={Drivers}
         options={{
-          title: 'Racing',
+          title: 'Drivers',
           tabBarIcon: ({ color }) => (
-            <FlagCheckered color={color} size={24} weight="fill" />
+            <Icon name="racing-helmet" color={color} size={24} />
           ),
         }}
       />

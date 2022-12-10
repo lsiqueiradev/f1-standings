@@ -25,19 +25,13 @@ export const RoundContainer = styled.View`
 export const RoundContainerNumber = styled.Text`
   color: ${({ theme }) => theme.COLORS.PRIMARY};
   font-family: ${({ theme }) => theme.FONT_FAMILY.BOLD};
-  font-size: ${RFValue(12)}px;
+  font-size: ${RFValue(10)}px;
 `
 
 export const RoundContainerCountry = styled.Text`
   color: ${({ theme }) => theme.COLORS.GRAY_100};
   font-family: ${({ theme }) => theme.FONT_FAMILY.BOLD};
-  font-size: ${RFValue(14)}px;
-`
-
-export const Constructor = styled.Text`
-  color: ${({ theme }) => theme.COLORS.GRAY_100};
-  font-family: ${({ theme }) => theme.FONT_FAMILY.SEMIBOLD};
-  font-size: ${RFValue(12)}px;
+  font-size: ${RFValue(10)}px;
 `
 
 export const PositionTimeContainer = styled.View`
@@ -47,16 +41,16 @@ export const PositionTimeContainer = styled.View`
 export const PositionTimeContainerSpan = styled.Text`
   color: ${({ theme }) => theme.COLORS.GRAY_100};
   font-family: ${({ theme }) => theme.FONT_FAMILY.MEDIUM};
-  font-size: ${RFValue(12)}px;
+  font-size: ${RFValue(10)}px;
 `
 export const PositionTimeContainerSpanValue = styled.Text`
   color: ${({ theme }) => theme.COLORS.GRAY_100};
   font-family: ${({ theme }) => theme.FONT_FAMILY.BOLD};
-  font-size: ${RFValue(12)}px;
+  font-size: ${RFValue(10)}px;
 `
 
 export const PositionTimeContainerTitle = styled.Text`
   color: ${({ theme }) => theme.COLORS.GRAY_100};
   font-family: ${({ theme }) => theme.FONT_FAMILY.BOLD};
-  font-size: ${RFValue(12)}px;
+  font-size: ${RFValue(10)}px;
 `

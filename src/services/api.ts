@@ -13,5 +13,5 @@ export const apiF1 = axios.create({
 })
 
 export const apiInfomation = axios.create({
-  baseURL: 'https://f1-standings-informations.herokuapp.com',
+  baseURL: 'https://f1-standings-api.onrender.com',
 })

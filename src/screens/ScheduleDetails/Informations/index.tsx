@@ -7,8 +7,9 @@ import { ScheduleBoxProps } from '@components/ScheduleBox'
 import { showMessage } from 'react-native-flash-message'
 import { apiF1, apiInfomation } from '@services/api'
 import { Loading } from '@components/Loading'
-import { circuitsImages } from '@utils/getNamesImages'
+// import { circuitsImages } from '@utils/getNamesImages'
 import { getCircuitInformationsNames } from '@utils/helpers'
+import { circuitsImages } from '@utils/getNamesImages'
 
 interface RouteParams {
   round: string
@@ -36,8 +37,8 @@ export function Informations() {
       const DriverLapRecord = informations.LapRecord.replace(`${informations.LapRecord.split(' ', 1)} `, '')
 
       setRace({ ...circuit, Informations: { ...informations, LapRecord, DriverLapRecord } })
-      // setRace(circuit)
     } catch (err) {
+      console.log(err)
       showMessage({
         type: 'danger',
         message: 'Unable to load race details',
@@ -105,7 +106,6 @@ export function Informations() {
           </S.WeekendItemContent>
         </S.WeekendItem>
       </S.WeekendContainer>
-
       <S.InformationsContainer>
         <S.InformationsTitle>Circuit Informations</S.InformationsTitle>
         <S.InformationsItem>

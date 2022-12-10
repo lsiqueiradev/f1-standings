@@ -1,12 +1,11 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
-import { TabRoutes } from './tab.routes'
-import { ProfileRoutes } from './profile.routes'
-
 import { useTheme } from 'styled-components'
 import { RFValue } from 'react-native-responsive-fontsize'
-import { ScheduleRoutes } from './schedule.routes'
-import { StandingRoutes } from './standing.routes'
+
+import { TabRoutes } from './tab.routes'
+import { RaceRoutes } from './race.routes'
+import { DriverRoutes } from './driver.routes'
 
 const { Navigator, Screen } = createNativeStackNavigator()
 
@@ -37,22 +36,15 @@ export function AppRoutes() {
         }}
       />
       <Screen
-        name="profile-stack"
-        component={ProfileRoutes}
+        name="race-stack"
+        component={RaceRoutes}
         options={{
           headerShown: false,
         }}
       />
       <Screen
-        name="schedule-stack"
-        component={ScheduleRoutes}
-        options={{
-          headerShown: false,
-        }}
-      />
-      <Screen
-        name="standing-stack"
-        component={StandingRoutes}
+        name="driver-stack"
+        component={DriverRoutes}
         options={{
           headerShown: false,
         }}
